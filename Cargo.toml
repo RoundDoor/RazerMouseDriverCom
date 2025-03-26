@@ -4,3 +4,18 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+winapi = { version = "0.3", features = [
+    "handleapi", 
+    "fileapi", 
+    "ioapiset", 
+    "winioctl", 
+    "errhandlingapi", 
+    "psapi",
+    "winbase",
+    "winerror",
+    "winnt",
+    "securitybaseapi",
+    "winuser"  # Required for keyboard input
+]}
+widestring = "1.0"
+ntapi = "0.4"
