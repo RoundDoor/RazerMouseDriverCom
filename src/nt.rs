@@ -22,6 +22,7 @@ pub fn get_path(h_file: HANDLE, ps_nt_path: &mut String) -> DWORD {
     }
 
     #[repr(C)]
+    #[allow(non_snake_case)]
     struct OBJECT_NAME_INFO {
         #[allow(non_snake_case)]
         Name: UNICODE_STRING,
